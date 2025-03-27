@@ -36,6 +36,7 @@
             tmrSorteioGeral = new System.Windows.Forms.Timer(components);
             btnJogar = new Button();
             tmrNiquel = new System.Windows.Forms.Timer(components);
+            lstNiquel = new ListBox();
             SuspendLayout();
             // 
             // lblCacaNiquel1
@@ -102,11 +103,21 @@
             tmrNiquel.Interval = 300;
             tmrNiquel.Tick += tmrNiquel_Tick;
             // 
+            // lstNiquel
+            // 
+            lstNiquel.FormattingEnabled = true;
+            lstNiquel.ItemHeight = 15;
+            lstNiquel.Location = new Point(211, 383);
+            lstNiquel.Name = "lstNiquel";
+            lstNiquel.Size = new Size(120, 94);
+            lstNiquel.TabIndex = 5;
+            // 
             // FrmCacaNiquel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(343, 504);
+            Controls.Add(lstNiquel);
             Controls.Add(btnJogar);
             Controls.Add(btlGirar);
             Controls.Add(lblCacaNiquel3);
@@ -127,5 +138,6 @@
         private System.Windows.Forms.Timer tmrSorteioGeral;
         private Button btnJogar;
         private System.Windows.Forms.Timer tmrNiquel;
+        private ListBox lstNiquel;
     }
 }

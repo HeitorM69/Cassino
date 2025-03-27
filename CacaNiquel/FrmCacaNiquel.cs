@@ -86,6 +86,8 @@ namespace CacaNiquel
                 lblCacaNiquel3.Text = String.Empty;
                 btnJogar.Text = "&Jogar";
                 contaNiquel = 1;
+                lstNiquel.Items.Add(niquel1 + "-" + niquel2 + "-" + niquel3);
+
             }
             if (contaGiro == 10) 
             {
