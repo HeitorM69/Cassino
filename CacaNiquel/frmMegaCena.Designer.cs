@@ -31,21 +31,22 @@
             lblResultado = new Label();
             btnSorteio = new Button();
             lblCartoes = new Label();
-            numCartao = new NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)numCartao).BeginInit();
+            qtdeCartoes = new NumericUpDown();
+            lstCartoes = new ListBox();
+            ((System.ComponentModel.ISupportInitialize)qtdeCartoes).BeginInit();
             SuspendLayout();
             // 
             // lblResultado
             // 
             lblResultado.BorderStyle = BorderStyle.FixedSingle;
-            lblResultado.Location = new Point(90, 100);
+            lblResultado.Location = new Point(23, 100);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(248, 53);
+            lblResultado.Size = new Size(315, 58);
             lblResultado.TabIndex = 0;
             // 
             // btnSorteio
             // 
-            btnSorteio.Location = new Point(167, 365);
+            btnSorteio.Location = new Point(131, 373);
             btnSorteio.Name = "btnSorteio";
             btnSorteio.Size = new Size(95, 57);
             btnSorteio.TabIndex = 1;
@@ -63,25 +64,35 @@
             lblCartoes.TabIndex = 2;
             lblCartoes.Text = "Qtd de cartões";
             // 
-            // numCartao
+            // qtdeCartoes
             // 
-            numCartao.Location = new Point(131, 21);
-            numCartao.Name = "numCartao";
-            numCartao.Size = new Size(120, 23);
-            numCartao.TabIndex = 3;
+            qtdeCartoes.Location = new Point(131, 21);
+            qtdeCartoes.Name = "qtdeCartoes";
+            qtdeCartoes.Size = new Size(120, 23);
+            qtdeCartoes.TabIndex = 3;
+            // 
+            // lstCartoes
+            // 
+            lstCartoes.FormattingEnabled = true;
+            lstCartoes.ItemHeight = 15;
+            lstCartoes.Location = new Point(23, 186);
+            lstCartoes.Name = "lstCartoes";
+            lstCartoes.Size = new Size(315, 169);
+            lstCartoes.TabIndex = 4;
             // 
             // frmMegaCena
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(407, 493);
-            Controls.Add(numCartao);
+            ClientSize = new Size(361, 493);
+            Controls.Add(lstCartoes);
+            Controls.Add(qtdeCartoes);
             Controls.Add(lblCartoes);
             Controls.Add(btnSorteio);
             Controls.Add(lblResultado);
             Name = "frmMegaCena";
             Text = "frmMegaCena";
-            ((System.ComponentModel.ISupportInitialize)numCartao).EndInit();
+            ((System.ComponentModel.ISupportInitialize)qtdeCartoes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -91,6 +102,7 @@
         private Label lblResultado;
         private Button btnSorteio;
         private Label lblCartoes;
-        private NumericUpDown numCartao;
+        private NumericUpDown qtdeCartoes;
+        private ListBox lstCartoes;
     }
 }
